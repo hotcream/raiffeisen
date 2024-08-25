@@ -28,6 +28,7 @@ public class MainPage {
 
     @Step("Open the cards pop-up")
     public MainPage openCardsPopup() {
+        Selenide.sleep(2000);
         cardsButton.click();
         return this;
     }
@@ -41,6 +42,7 @@ public class MainPage {
 
     @Step("Click the restructuring button")
     public MainPage clickRestructuringButton() {
+        Selenide.sleep(2000);
         restructuringButton.click();
         return this;
     }

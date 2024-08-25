@@ -1,6 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -22,6 +23,7 @@ public class ATMPage {
 
     @Step("Click the trigger")
     public ATMPage clickListTrigger() {
+        Selenide.sleep(3000);
         listTrigger.click();
         return this;
     }
