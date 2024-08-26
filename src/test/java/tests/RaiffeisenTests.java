@@ -12,7 +12,7 @@ public class RaiffeisenTests extends BaseTest  {
     TestData testData = new TestData();
 
     @Test
-    @Tag("negative")
+    @Tag("smoke")
     @DisplayName("Check the opening of the debit cashback card page")
     public void checkDebitCashbackCardPageTest() {
 
@@ -39,7 +39,7 @@ public class RaiffeisenTests extends BaseTest  {
     }
 
     @Test
-    @Tag("smoke")
+    @Tag("negative")
     @DisplayName("Check error message for online banking login without phone number.")
     public void checkErrorForLoginWithoutPhoneNumberTest() {
 
@@ -53,6 +53,7 @@ public class RaiffeisenTests extends BaseTest  {
     }
 
     @Test
+    @Tag("smoke")
     @DisplayName("Check the opening press centre page")
     public void checkOpeningPressCentrePageTest() {
 
